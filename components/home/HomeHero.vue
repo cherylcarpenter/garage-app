@@ -35,5 +35,6 @@ export default {
   height: 500px;
   background: url(../images/AdobeStock_113405276_Preview.jpeg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 </style>

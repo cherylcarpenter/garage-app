@@ -4,36 +4,40 @@
       <div v-if="encodeURI(bike.model) === encodedModel">
         <v-row>
           <v-col cols="12">
-            <v-img min-height="300" :src="`${bike.img}`"> </v-img></v-col></v-row>
-        <v-row>
-          <v-col cols="12">
-            <h1 class="text-h2 text-center py-4 text-primary">
-              {{ bike.model }}
-            </h1>
-            <hr color="accent" align="center" maxWidth="200" />
+            <v-img min-height="300" :src="`${bike.img}`"> </v-img>
           </v-col>
         </v-row>
-        <v-row class="v-row align-center justify-center">
-          <v-col cols="6">
-            <p><strong>Manufacturer: </strong>{{ bike.manufacturer }}</p>
-            <p><strong>Power: </strong>{{ bike.power }}</p>
-            <p><strong>Color: </strong>{{ bike.color }}</p>
-            <p><strong>Displacement: </strong>{{ bike.displacement }}</p>
-            <p><strong>Year: </strong>{{ bike.year }}</p>
-          </v-col>
-        </v-row>
+        <v-container>
+          <v-row>
+            <v-col cols="12">
+              <h1 class="text-h2 text-center py-4 text-primary">
+                {{ bike.model }}
+              </h1>
+              <hr color="accent" align="center" maxWidth="200" />
+            </v-col>
+          </v-row>
+          <v-row class="align-center justify-center">
+            <v-col cols="12" md="6">
+              <p><strong>Manufacturer: </strong>{{ bike.manufacturer }}</p>
+              <p><strong>Power: </strong>{{ bike.power }}</p>
+              <p><strong>Color: </strong>{{ bike.color }}</p>
+              <p><strong>Displacement: </strong>{{ bike.displacement }}</p>
+              <p><strong>Year: </strong>{{ bike.year }}</p>
+            </v-col>
+          </v-row>
 
-        <v-row class="v-row align-center justify-center">
-          <v-col cols="6">
-            <strong>Description: </strong>
-            <p class="mb-6 body-1">
-              {{ bike.description.replaceAll("&nbsp;", " ") }}
-            </p>
-          </v-col>
-        </v-row>
-        <v-row justify="center" align="center" class="mt-3 mb-8">
-          <v-btn to="/" color="primary">Go Back</v-btn>
-        </v-row>
+          <v-row class="v-row align-center justify-center">
+            <v-col cols="12" md="6">
+              <strong>Description: </strong>
+              <p class="mb-6 body-1">
+                {{ bike.description.replaceAll("&nbsp;", " ") }}
+              </p>
+            </v-col>
+          </v-row>
+          <v-row justify="center" align="center" class="mt-3 mb-8">
+            <v-btn to="/" color="primary">Go Back</v-btn>
+          </v-row>
+        </v-container>
       </div>
     </template>
   </section>

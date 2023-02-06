@@ -5,7 +5,7 @@
     <v-container>
     <v-row justify="center" align="center" class="pa-6">
       <template v-for="(bike, index) in data.bikes" :key="index">
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <cards-custom-actions class="" v-bind="bike" :index="index" data="{{data}}" index="{{index}}" />
         </v-col>
       </template>
