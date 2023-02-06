@@ -2,18 +2,15 @@
   <div class="pa-1">
     <v-card>
       <div class="img-wrapper">
-        <v-img :src="`${img}`" height="300px" cover></v-img>
+        <v-img :src="`${img}`" height="300px" contain></v-img>
       </div>
-
       <v-card-title>{{ model }}</v-card-title>
-
       <v-card-subtitle>
         <strong>Manufacturer: </strong>{{ manufacturer }}</v-card-subtitle>
       <v-card-subtitle><strong>Power: </strong>{{ power }}</v-card-subtitle>
       <v-card-subtitle><strong>Color: </strong>{{ color }}</v-card-subtitle>
       <v-card-subtitle><strong>Displacement: </strong>{{ displacement }}</v-card-subtitle>
       <v-card-subtitle><strong>Year: </strong>{{ year }}</v-card-subtitle>
-
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn color="primary" variant="flat" flat :to="{ path: `/${modelUrl(model)}` }" nuxt>

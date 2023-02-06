@@ -1,3 +1,9 @@
+# website
+deploys to 
+https://warm-souffle-8e70b3.netlify.app/
+
+
+
 ## Setup
 
 Make sure to install the dependencies:
