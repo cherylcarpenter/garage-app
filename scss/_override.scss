@@ -1,0 +1,10 @@
+html {
+  font-family: $font-family;
+}
+.v-application {
+  [class*="text-"] {
+    font-family: $font-family, sans-serif !important;
+  }
+  font-family: $font-family, sans-serif !important;
+  color: $brand_black;
+}
